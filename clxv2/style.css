@@ -19,6 +19,13 @@ h4 {
   font-family: "Roboto Light", Roboto, Helvetica, sans-serif;
 }
 
+h5.jp{
+  text-align: center;
+  color: black;
+  font-family: 'Noto Sans', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 75%;
+}
+
 a.button-reminder {
   background-color: #4285f4;
   border: none;
@@ -44,7 +51,7 @@ a.button-reminder:hover{
 }
 
 a.button-reminder:active {
-  background-color: black;
+  background-color: #104A79;
 }
 
 /*.buttonHolder {
