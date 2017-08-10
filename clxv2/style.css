@@ -19,7 +19,7 @@ h4 {
   font-family: "Roboto Light", Roboto, Helvetica, sans-serif;
 }
 
-a.button {
+a.button-reminder {
   background-color: #4285f4;
   border: none;
   color: white;
@@ -27,23 +27,26 @@ a.button {
   width: 100px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 100%;
   font-family: Roboto, sans-serif;
   cursor: default;
   border-radius: 2px;
   transition: all 0.2s;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 
-a.button:hover {
-  background-color: lightblue;
+a.button-reminder:hover{
+  background-color: #7AC0F8;
   width: 110px;
 }
 
-a.button:active {
+a.button-reminder:active {
   background-color: black;
 }
 
-.buttonHolder {
+/*.buttonHolder {
   text-align: center;
-}
+}*/
