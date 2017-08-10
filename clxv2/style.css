@@ -5,25 +5,26 @@ body {
 h2.title {
   text-align: center;
   color: #2196F3;
-  font-family: Montserrat, sans-serif;
+  font-family: Montserrat, Roboto, Helvetica, sans-serif;
 }
 
 h4.underconst{
   text-align: center;
   color: #F44336;
-  font-family: Montserrat, Roboto, sans-serif;
+  font-family: Montserrat, Roboto, Helvetica, sans-serif;
 }
 h4 {
   text-align: center;
   color: black;
-  font-family: "Roboto Light", sans-serif;
+  font-family: "Roboto Light", Roboto, Helvetica, sans-serif;
 }
 
 a.button {
   background-color: #4285f4;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px;
+  width: 100px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -31,10 +32,12 @@ a.button {
   font-family: Roboto, sans-serif;
   cursor: default;
   border-radius: 2px;
+  transition: all 0.2s;
 }
 
 a.button:hover {
   background-color: lightblue;
+  width: 110px;
 }
 
 a.button:active {
