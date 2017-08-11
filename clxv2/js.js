@@ -15,7 +15,7 @@ function timeSTART(){
   menit = timeCHECK(menit);
   detik = timeCHECK(detik);
   document.getElementById('realtimeclock').innerHTML = jam + "." + menit + "." + detik;
-  document.getElementById('realtimedate').innerHTML = hari + "/" + bulan + "/" + tahun + "(?)";
+  document.getElementById('realtimedate').innerHTML = ima.toDateString();
   setTimeout(timeSTART, 500);
 }
 
