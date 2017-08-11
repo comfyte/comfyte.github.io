@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400|Noto+Sans" rel="stylesheet">
+  <script>
+    function timeSTART(){
+      var ima = new Date();
+      var jam = ima.getHours();
+      var menit = ima.getMinutes();
+      var detik = ima.getSeconds();
+      var hari = ima.getDay();
+      jam = timeCHECK(jam);
+      menit = timeCHECK(menit);
+      detik = timeCHECK(detik);
+      document.getElementById('realtimeclock').innerHTML = ima + " " + jam + "." + menit + "." + detik;
+      setTimeout(timeSTART, 500);
+    }
+    function timeCHECK(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
   <head>
     <title>clxv2 project UNDER CONSTRUCTION</title>
-    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400|Noto+Sans" rel="stylesheet">-->
     <h2 class="title">XI MIA 6</h2>
   </head>
-
-  <body>
+  <body onload="timeSTART()">
     <h4>Click or tap one of these buttons to go to desired page.</h4>
-    <!--<h5 class="jp">ボタンを一つクリックすると、目的のページを開きます。</h5>-->
-    <!--<div class=buttonHolder>-->
-    <a href="https://trello.com/b/S6auYJu4" class="button blue" title="Daftar tugas, ulangan, deadline, event, dan sebagainya">Reminder</a>
+    <h4 id="realtimeclock"></h4>
+    <a href="https://trello.com/b/S6auYJu4" class="button blue" title="Daftar tugas, ulangan, deadline, event, dsb.">Reminder</a>
     <a href="#" class="button blue" title="Arsip file-file materi">Arsip</a>
     <a href="http://sia.sman1yogya.sch.id/absen/index.php" class="button blue" title="Sistem Absensi Elektronik SMA Negeri 1 Yogyakarta (hanya bisa diakses melalui jaringan sekolah)">Absensi Elektronik</a>
-    <!--</div>-->
   </body>
-
 </html>
