@@ -1,6 +1,4 @@
-body {
-  background-color: #FAFAFA;
-}
+body {background-color: #FAFAFA;}
 
 h2.title {
   text-align: center;
@@ -14,12 +12,11 @@ h4 {
   font-family: "Roboto Light", Roboto, Helvetica, sans-serif;
 }
 
-a.button-reminder {
-  background-color: #4285f4;
+a.button {
   border: none;
   color: white;
   padding: 15px;
-  width: 100px;
+  width: 150px;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -33,11 +30,10 @@ a.button-reminder {
   margin-bottom: 10px;
 }
 
-a.button-reminder:hover{
-  background-color: #7AC0F8;
-  width: 110px;
-}
+a.button:hover {width: 160px;}
 
-a.button-reminder:active {
-  background-color: #104A79;
-}
+/*BUTTON COLORS*/
+/*blue*/
+a.button.blue{background-color: #4285f4;}
+a.button.blue:hover{background-color: #7AC0F8;}
+a.button.blue:active {background-color: #104A79;}
