@@ -17,7 +17,7 @@ h4.time {
 h4.date {
   text-align: center;
   color: black;
-  font-family: "Roboto Light", Helvetica, sans-serif;
+  font-family: "Roboto Light", Roboto, Helvetica, sans-serif;
   margin-top: 0;
 }
 
@@ -37,7 +37,7 @@ a.button {
   text-decoration: none;
   display: block;
   font-size: 100%;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
   cursor: default;
   border-radius: 2px;
   transition: all 0.2s;
