@@ -1,40 +1,25 @@
-function allscripts(){
-  timeSTART();
-  langEN();
-}
-
-function timeSTART(){
+function nowSTART(){
   var ima = new Date();
   var jam = ima.getHours();
   var menit = ima.getMinutes();
   var detik = ima.getSeconds();
   var hari = ima.getDay();
+  var tanggal = ima.getDate();
   var bulan = ima.getMonth();
   var tahun = ima.getFullYear();
+  var daftarBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+  var daftarHari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
   jam = timeCHECK(jam);
   menit = timeCHECK(menit);
   detik = timeCHECK(detik);
-  document.getElementById('realtimeclock').innerHTML = jam + "." + menit + "." + detik;
-  document.getElementById('realtimedate').innerHTML = ima.toDateString();
-  setTimeout(timeSTART, 500);
+  hari = daftarHari[hari];
+  bulan = daftarBulan[bulan];
+  document.getElementById('clockTick').innerHTML = jam + "." + menit + "." + detik;
+  document.getElementById('todayDate').innerHTML = hari + ", " + tanggal + " " + bulan + " " + tahun;
+  setTimeout(nowSTART, 500);
 }
 
 function timeCHECK(i){
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
-}
-
-function langEN(){
-  document.getElementById('instr').innerHTML = "Click one of these buttons to go to desired page.";
-  setTimeout(langID, 2000);
-}
-
-function langID(){
-  document.getElementById('instr').innerHTML = "Silakan klik salah satu tombol untuk menuju laman yang diinginkan.";
-  setTimeout(langJP, 2000);
-}
-
-function langJP(){
-  document.getElementById('instr').innerHTML = "これらのボタンを一つクリックすると、目的のページを開きます。";
-  setTimeout(langEN, 2000);
 }

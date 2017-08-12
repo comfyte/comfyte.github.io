@@ -2,17 +2,24 @@
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400,700|Noto+Sans" rel="stylesheet">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js.js" charset="UTF-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400,400i,700|Noto+Sans" rel="stylesheet">
+  <!--favicon start-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!--end of favicon-->
+  <script type="text/javascript" src="js.js"></script>
   <head>
     <title>clxv2 project UNDER CONSTRUCTION</title>
     <h1 class="title">XI MIA 6</h1>
+    <h4 class="time" id="clockTick"></h4>
+    <h4 class="date" id="todayDate"></h4>
   </head>
-  <body onload="allscripts()">
-    <h4 class="time" id="realtimeclock"></h4>
-    <h4 class="date" id="realtimedate"></h4>
-    <h4 class="instruction" id="instr"></h4>
+  <body onload="nowSTART()">
+    <h4 class="instruction">Click or tap one of these buttons to go to desired page.</h4>
     <a href="https://trello.com/b/S6auYJu4" class="button blue" title="Daftar tugas, ulangan, deadline, event, dsb.">Reminder</a>
     <a href="#" class="button blue" title="Arsip file-file materi">Arsip</a>
     <a href="http://sia.sman1yogya.sch.id/absen/index.php" class="button blue" title="Sistem Absensi Elektronik SMA Negeri 1 Yogyakarta (hanya bisa diakses melalui jaringan sekolah)">Absensi Elektronik</a>

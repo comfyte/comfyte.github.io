@@ -9,21 +9,23 @@ h1.title {
 h4.time {
   text-align: center;
   color: black;
-  font-family: "Roboto Bold", Roboto, Helvetica, sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-style: bold;
   margin-bottom: 0;
 }
 
 h4.date {
   text-align: center;
   color: black;
-  font-family: "Roboto Light", Roboto, Helvetica, sans-serif;
+  font-family: "Roboto Light", Helvetica, sans-serif;
   margin-top: 0;
 }
 
 h4.instruction {
   text-align: center;
   color: #BDBDBD;
-  font-family: "メイリオ", Meiryo, Roboto, Helvetica, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-style: italic;
 }
 
 a.button {
