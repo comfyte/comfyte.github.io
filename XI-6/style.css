@@ -9,8 +9,7 @@ h1.title {
 h4.time {
   text-align: center;
   color: black;
-  font-family: Roboto, Helvetica, sans-serif;
-  font-style: bold;
+  font-family: "Roboto Bold", Roboto, Helvetica, sans-serif;
   margin-bottom: 0;
 }
 
