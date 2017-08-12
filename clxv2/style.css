@@ -53,3 +53,11 @@ a.button:hover {width: 160px;}
 a.button.blue{background-color: #4285f4;}
 a.button.blue:hover{background-color: #7AC0F8;}
 a.button.blue:active {background-color: #104A79;}
+/*green*/
+a.button.green{background-color: #4CAF50;}
+a.button.green:hover{background-color: #94CF96;}
+a.button.green:active{background-color: #255727;}
+/*red*/
+a.button.red{background-color: #F44336;}
+a.button.red:hover{background-color: #F98E86;}
+a.button.red:active{background-color: #79211A;}
