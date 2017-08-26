@@ -49,6 +49,7 @@ a.button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+  cursor: not-allowed;
 }
 
 a.button:hover {width: 160px;}
