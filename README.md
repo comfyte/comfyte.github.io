@@ -1,2 +1,1 @@
-# mfarrel12.github.io
-Under Construction
+Currently used for hosting files, images, etc for personal use. Nothing else yet.
