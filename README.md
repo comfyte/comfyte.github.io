@@ -1,1 +1,0 @@
-Currently used for hosting files, images, etc for personal use. Nothing else yet.
