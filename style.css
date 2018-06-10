@@ -1,17 +1,47 @@
+body,html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
-  background-color: #FAFAFA;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container{
-  height: 200px;
-  background-color: #FFF000;
+.bg-img {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("storage/bg.jpg");
+  filter: blur(25px) opacity(50%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.wrapper {
+  z-index: 2;
+  position: fixed;
+}
+
+.box {
+  background-color: #FFFFFF;
   text-align: center;
+  /* height: 300px; */
+  width: 500px;
+  padding: 50px;
+  box-shadow: 0px 0px 100px rgba(0,0,0,0.25);
+  border-radius: 25px
 }
 
-.centrecont{
-  position: relative;
+.centre-cont {
+  background-color: blue;
+  /* position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
 }
 /*h1.title {
   text-align: center;
