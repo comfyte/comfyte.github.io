@@ -1,3 +1,5 @@
+window.onload(alert('Disclaimer: This site is under construction'));
+
 function nowSTART(){
   var ima = new Date();
   var jam = ima.getHours();
