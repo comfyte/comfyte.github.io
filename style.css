@@ -40,7 +40,7 @@ div.wrapper {
   display: block;
   /* background-color: yellow; */
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 div.profile-img, a.divider {
@@ -96,10 +96,11 @@ a.divider {
   background-color: black;
   margin: 25px auto;
   transition: all .2s;
+  cursor: default;
 }
 
 a.divider:hover {
-  background-color: #e81123;
+  background-color: #ea005e;
   width: 120px;
 }
 
@@ -117,24 +118,28 @@ a.buttons {
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: .8em;
   text-decoration: none;
-  transition: all .2s;
+  transition: all .1s;
 }
 
 a.buttons:hover {
-  background-color: #0078d7;
-  color: white;
+  /* background-color: #0078d7; */
+  background-color: rgba(0,0,0,0.1);
+  /* color: white; */
 }
 
-a.buttons:active {background-color: #0063B1}
+a.buttons:active {
+  background-color: #0063B1;
+  color: white;
+}
 
 @media only screen and (min-width: 220px) and (max-width: 600px) {
   div.bg-img {display: none}
 
   div.container-box {
-    background-color: yellow;
+    /* background-color: yellow; */
     border-radius: initial;
     box-shadow: initial;
     width: 100%;
@@ -142,7 +147,7 @@ a.buttons:active {background-color: #0063B1}
   }
 
   div.wrapper {
-    background-color: pink;
+    /* background-color: pink; */
     text-align: initial;
   }
 
@@ -170,6 +175,17 @@ a.buttons:active {background-color: #0063B1}
 
   a.buttons {
     display: block;
+    padding-left: initial;
+    }
+
+  a.buttons:hover {
+    background-color: initial;
+    color: #0078d7;
+    /* text-decoration: underline; */
+  }
+
+  a.buttons:active {
+    color: #0063B1;
   }
 }
 
@@ -184,8 +200,6 @@ a.buttons:active {background-color: #0063B1}
     width: 100%;
     height: 100%;
   }
-
-  div.wrapper {width: 100%}
 
   div.profile-img {transition: initial}
 
