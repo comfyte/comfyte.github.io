@@ -1,4 +1,4 @@
-window.onload(alert('Disclaimer: This site is under construction'));
+window.onload(alert('Disclaimer: This site (including the blog) is under construction'));
 
 function nowSTART(){
   var ima = new Date();
