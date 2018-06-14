@@ -111,7 +111,7 @@ div.links {
 
 a.buttons {
   display: inline-block;
-  padding: 5px;
+  padding: .4em;
   /* margin: auto 5px; */
   border-radius: 5px;
   /* background-color: black; */
@@ -175,8 +175,11 @@ a.buttons:active {
 
   a.buttons {
     display: block;
-    padding-left: initial;
-    }
+    padding: initial;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-size: 1em;
+  }
 
   a.buttons:hover {
     background-color: initial;
