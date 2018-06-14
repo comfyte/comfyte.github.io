@@ -14,7 +14,7 @@ div.bg-img {
   position: fixed;
   height: 100%;
   width: 100%;
-  background-image: url("storage/bg.jpg");
+  background-image: url("res/bg/01");
   filter: blur(25px) opacity(50%);
   background-position: center;
   background-size: cover;
