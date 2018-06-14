@@ -151,11 +151,22 @@ a.buttons:active {
     text-align: initial;
   }
 
-  div.ava-img, div.title, a.divider {
+  div.title, a.divider {
     margin: initial;
     margin-top: 25px;
     margin-bottom: 25px;
   }
+
+  /* To remove unnecessary padding (below)*/
+  div.ava-img {
+    margin: initial;
+    margin-bottom: 25px;
+  }
+  div.links {
+    margin: initial;
+    margin-top: 25px;
+  }
+  /* To remove unnecessary padding (above) */
 
   div.ava-img {transition: initial}
 
