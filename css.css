@@ -43,11 +43,11 @@ div.wrapper {
   /* overflow: hidden; */
 }
 
-div.profile-img, a.divider {
+div.ava-img, a.divider {
   width: 100px;
 }
 
-div.profile-img {
+div.ava-img {
   margin: 25px auto;
   /* width: 100px; */
   height: 100px;
@@ -58,9 +58,9 @@ div.profile-img {
 
 }
 
-div.profile-img:hover {box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.5)}
+div.ava-img:hover {box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.5)}
 
-div.profile-img img {height: 100%;}
+div.ava-img img {height: 100%;}
 
 div.title {
   display: block;
@@ -151,15 +151,15 @@ a.buttons:active {
     text-align: initial;
   }
 
-  div.profile-img, div.title, a.divider {
+  div.ava-img, div.title, a.divider {
     margin: initial;
     margin-top: 25px;
     margin-bottom: 25px;
   }
 
-  div.profile-img {transition: initial}
+  div.ava-img {transition: initial}
 
-  div.profile-img:hover {box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25)}
+  div.ava-img:hover {box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25)}
 
   h1.thin, h1.bold {
     display: block;
@@ -204,7 +204,7 @@ a.buttons:active {
     height: 100%;
   }
 
-  div.profile-img {transition: initial}
+  div.ava-img {transition: initial}
 
-  div.profile-img:hover {box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25)}
+  div.ava-img:hover {box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25)}
 }
