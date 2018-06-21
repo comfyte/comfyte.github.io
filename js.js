@@ -23,7 +23,7 @@ function showBG(){
 $(document).ready(function(){
   $('.ava-img').prop('title', avatarCredit);
   $('.bg-img').prop('title', backgroundCredit);
-  alert('Disclaimer: This site is under construction');
+  // alert('Disclaimer: This site is under construction');
 })
 
 $(window).on('load', function(){
