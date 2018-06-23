@@ -27,6 +27,7 @@ $(document).ready(function(){
 })
 
 $(window).on('load', function(){
+  $('#pleasewait').css('opacity', '1');
   setTimeout(hideYokoso, 500);
   // if (window.matchMedia("(max-width: 600px)").matches){
   //   $('.ava-img').animate({marginLeft: '0px'}, {'queue': false});
