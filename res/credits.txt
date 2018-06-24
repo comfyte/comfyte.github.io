@@ -1,3 +1,3 @@
-var avatarCredit = "\u00A9 Nintendo / HAL Laboratory, Inc."
+var avatarCredit = "\u00A9A,H/YCP"
 
-var backgroundCredit = ""
+var backgroundCredit = "\u00A9MAGES./Project PM"
