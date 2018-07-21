@@ -3,7 +3,7 @@ function hideYokoso(){
     opacity: 'hide',
     fontSize: '+=0.5em'
   }, 250);
-  setTimeout(showWrapper, 500); //250ms delay
+  setTimeout(showWrapper, 250); //0ms delay
 }
 
 function showWrapper(){
