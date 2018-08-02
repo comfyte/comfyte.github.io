@@ -83,7 +83,7 @@ div.wrapper {
   to {transform: scale(1)}
 }
 
-div.ava-img, a.divider {
+div.ava-img, div.divider {
   width: 100px;
 }
 
@@ -135,20 +135,20 @@ h1.bold {
 
 h1.bold:hover {color: #0078d7}
 
-a.divider {
+div.divider {
   display: block;
   height: 5px;
   border-radius: 2.5px;
   background-color: black;
   margin: 25px auto;
-  transition: all .2s;
-  cursor: default;
+  /* transition: all .2s; */
+  /* cursor: default; */
 }
 
-a.divider:hover {
+/* div.divider:hover {
   background-color: deepPink;
   width: 120px;
-}
+} */
 
 div.links {
   /* background-color: pink; */
@@ -202,7 +202,7 @@ a.buttons:active {
     text-align: initial;
   }
 
-  div.title, a.divider {
+  div.title, div.divider {
     margin: initial;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -232,9 +232,9 @@ a.buttons:active {
 
   h1.bold:hover {color: initial}
 
-  a.divider {border-radius: 0px 2.5px 2.5px 0px}
+  div.divider {border-radius: 0px 2.5px 2.5px 0px}
 
-  a.divider:hover {width: 100px}
+  /* div.divider:hover {width: 100px} */
 
   a.buttons {
     display: block;
@@ -260,7 +260,7 @@ a.buttons:active {
 @media only screen and (max-width: 219.9px){
   div.bg-img, div.title, div.links {display: none}
 
-  a.divider:hover {width: 100px}
+  /* div.divider:hover {width: 100px} */
 
   div.container-box {
     border-radius: initial;
