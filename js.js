@@ -1,3 +1,5 @@
+var medq = window.matchMedia("(max-width: 600px)");
+
 function hideYokoso(){
   $('#pleasewait').animate({
     opacity: 'hide',
@@ -8,7 +10,12 @@ function hideYokoso(){
 
 function showWrapper(){
   $('.wrapper').animate({opacity: 'show'}, 500);
-  setTimeout(showShadow, 1000); //500ms delay
+  if (medq.matches){
+    showBG();
+  }
+  else{
+    setTimeout(showShadow, 1000); //500ms delay
+  }
 }
 
 function showShadow(){
