@@ -8,7 +8,7 @@ function hideYokoso(){
   }, 250);
   setTimeout(showWrapper, 250); //0ms delay
   if (medq.matches){
-    showBG();
+    setTimeout(showBG, 125);
   }
 }
 
