@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+}
+
+/* div.bg-img {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-image: url("res/bg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+/* div.bg-glass {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+
+div.container {
+  /* background-color: yellow; */
+}
+
+div.title {
+  /* background-color: green; */
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: white;
+  opacity: 0.5;
+  cursor: default;
+  margin: 0;
+}
+
+h1.emphasis {
+  opacity: 1;
+  color: #f9c440;
+}
+
+div.links {
+  /* background-color: red; */
+  width: 50%;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  /* background-color: pink; */
+  display: block;
+  margin-top: .75em;
+  color: white;
+  transition: all .2s;
+}
+
+span {
+  opacity: 0;
+  display: inline !important;
+  transition: all .2s;
+}
+
+div.links:hover a {opacity: 0.25}
+div.links:hover a:hover {opacity: 1}
+div.links:hover a:hover span {opacity: 1}
