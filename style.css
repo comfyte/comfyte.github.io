@@ -54,6 +54,7 @@ i {
   transform: translateY(-50%) scale(.5);
   opacity: .25;
   transition: all .2s;
+  cursor: default;
 }
 
 i:hover {
