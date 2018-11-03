@@ -45,6 +45,22 @@ h1 {
   transition: opacity 1s, color 1s;
 }
 
+h1.emphasis {
+  display: inline-block;
+}
+
+i {
+  margin-left: 1em;
+  transform: translateY(-50%) scale(.5);
+  opacity: .25;
+  transition: all .2s;
+}
+
+i:hover {
+  color: red;
+  opacity: 1;
+}
+
 div.links {
   width: 50%;
   opacity: .2;
@@ -74,6 +90,7 @@ div.links:hover a:hover span {opacity: 1}
 
 @media only screen and (max-width: 228px){
   h1 {font-size: 2em}
+  i {display: none !important}
 }
 
 ::selection {
