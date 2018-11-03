@@ -75,3 +75,7 @@ div.links:hover a:hover span {opacity: 1}
 @media only screen and (max-width: 228px){
   h1 {font-size: 2em}
 }
+
+::selection {
+  background-color: #666666;
+}
