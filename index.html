@@ -11,9 +11,23 @@
   <link href="style.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script>
+    $(window).on('load', function(){
+      $("h1").css("opacity", ".5");
+      $(".emphasis").css({'color':'#f9c440','opacity':'1'})
+      $(".links").css("opacity", "1");
+      $("a").css("cursor", "pointer");
+    })
+  </script>
 
-  <noscript><div style="text-align: center; color: red">Javascript Error</div></noscript>
+  <noscript>
+    <style>
+      h1 {opacity: .5}
+      h1.emphasis {color: #f9c440; opacity: 1;}
+      div.links {opacity: 1}
+      a {cursor: pointer}
+    </style>
+  </noscript>
 
   <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
