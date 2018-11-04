@@ -75,19 +75,20 @@ a {
   display: block;
   margin-top: .75em;
   color: white;
-  transition: all .2s;
+  transition: opacity .2s, transform .1s;
   cursor: not-allowed;
 }
 
 span {
   opacity: 0;
   display: inline !important;
-  transition: all .2s;
+  transition: opacity .2s;
 }
 
 div.links:hover a {opacity: .25}
 div.links:hover a:hover {opacity: 1}
 div.links:hover a:hover span {opacity: 1}
+a:active {transform: scale(.9)}
 
 @media only screen and (max-width: 228px){
   h1 {font-size: 2em}
