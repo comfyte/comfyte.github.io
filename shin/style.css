@@ -48,7 +48,7 @@ div.wrapper-desktop a {
 
 div.wrapper-desktop a.activ {
   opacity: 1;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 div.wrapper-desktop a:hover {
