@@ -13,7 +13,7 @@ body {
 
 div.header {
   /* display: block; */
-  background-color: pink;
+  /* background-color: pink; */
   position: fixed;
   width: 100%;
   /* height: 100px; */
@@ -28,12 +28,12 @@ div.wrapper-desktop {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   margin: 2em 3em;
 }
 
-div.wrapper-desktop a {
-  background-color: yellow;
+a.navigation {
+  /* background-color: yellow; */
   display: inline-block;
   padding: 0.25em;
   margin: 0 0.25em 0 0.25em;
@@ -46,18 +46,26 @@ div.wrapper-desktop a {
   transition: box-shadow 0.1s, opacity 0.1s;
 }
 
-div.wrapper-desktop a.activ {
+a.activ {
   opacity: 1;
   font-weight: 600;
 }
 
-div.wrapper-desktop a:hover {
+a.navigation:hover {
   opacity: 1;
   box-shadow: 0px -2px black inset;
 }
 
-div.icons {
+div.social {
   /* float: right; */
+}
+
+a.icon {
+  font-size: 1.25em;
+  line-height: normal;
+  text-decoration: none;
+  color: black;
+  margin: 0 0.25em;
 }
 
 div.container {
