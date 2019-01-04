@@ -12,7 +12,6 @@ body {
 }
 
 div.header {
-  /* display: block; */
   /* background-color: pink; */
   position: fixed;
   width: 100%;
@@ -20,11 +19,7 @@ div.header {
   top: 0;
 }
 
-#mobile {
-  display: none;
-}
-
-div.wrapper-desktop {
+div.headwrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,7 +60,7 @@ a.icon {
   line-height: normal;
   text-decoration: none;
   color: black;
-  margin: 0 0.25em;
+  margin: 0 0.3em;
 }
 
 div.container {
@@ -115,6 +110,8 @@ h2 {
   margin-bottom: 0;
 }
 
+#middle-icons {display: none}
+
 div.credit {
   /* background-color: pink; */
   position: fixed;
@@ -125,4 +122,29 @@ div.credit {
 
 div.credit, a.creditlink {
   color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 500px) {
+  div.headwrap {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  a.activ {
+    margin-left: 0.25em !important;
+  }
+
+  #top-icons {display: none}
+  #middle-icons {display: block}
+
+  div.social {
+    margin-top: 1em;
+  }
+
+  a.icon {
+    font-size: 1.5em;
+    margin: 0.5em 0.3em 0 0.3em !important;
+    opacity: 0.5;
+  }
 }
