@@ -148,3 +148,7 @@ div.credit, a.creditlink {
     opacity: 0.5;
   }
 }
+
+@media only screen and (max-height: 350px) {
+  div.credit {display: none}
+}
