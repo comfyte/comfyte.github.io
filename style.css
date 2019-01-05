@@ -9,7 +9,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #fafafa;
+  cursor: default;
 }
+
+::selection {background-color: #d4d4d4}
 
 div.header {
   /* background-color: pink; */
@@ -25,7 +28,7 @@ div.headwrap {
   justify-content: space-between;
   /* background-color: lightgreen; */
   margin: 2em 3em;
-  cursor: default;
+  /* cursor: default; */
 }
 
 a.navigation {
@@ -38,22 +41,18 @@ a.navigation {
   text-decoration: none;
   color: black;
   opacity: 0.8;
-  box-shadow: 0px -2px transparent inset;
-  transition: box-shadow 0.1s, opacity 0.1s;
+  box-shadow: 0px -1px transparent inset;
+  /* transition: box-shadow 0.1s, opacity 0.1s; */
 }
 
-a.activ {
+a.aktiv {
   opacity: 1;
   font-weight: 600;
 }
 
 a.navigation:hover {
   opacity: 1;
-  box-shadow: 0px -2px black inset;
-}
-
-div.social {
-  /* float: right; */
+  box-shadow: 0px -1px black inset;
 }
 
 a.icon {
@@ -104,6 +103,18 @@ h1 {
   font-weight: 700;
   margin-top: 0.8em;
   margin-bottom: 0.4em;
+  transition: color 0.5s;
+}
+
+h1:hover {color: #3689e6}
+h1:hover #eR {max-width: 6ch}
+
+#eR {
+  display: inline-block;
+  max-width: 0;
+  transition: max-width 0.5s;
+  overflow: hidden;
+  vertical-align: top;
 }
 
 h2 {
@@ -129,16 +140,20 @@ div.credit, a.creditlink {
   color: rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
   div.headwrap {
     display: block;
     text-align: center;
     margin: 1em 0;
   }
 
-  a.activ {
+  a.aktiv {
     margin-left: 0.25em !important;
   }
+
+  #eR {display: none}
+
+  h1:hover {color: unset}
 
   #top-icons {display: none}
   #middle-icons {display: block}
@@ -149,7 +164,8 @@ div.credit, a.creditlink {
 
   a.icon {
     font-size: 1.5em;
-    margin: 0.5em 0.3em 0 0.3em !important;
+    /* margin: 0.5em 0.3em 0 0.3em !important; */
+    margin-top: 0.5em;
     opacity: 0.5;
   }
 }
