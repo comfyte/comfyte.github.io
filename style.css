@@ -10,6 +10,7 @@ body {
   justify-content: center;
   background-color: #fafafa;
   cursor: default;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ::selection {background-color: #d4d4d4}
@@ -36,7 +37,6 @@ a.navigation {
   display: inline-block;
   padding: 0.25em;
   margin: 0 0.25em 0 0.25em;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-decoration: none;
   color: black;
@@ -77,8 +77,8 @@ img {
 }
 
 div.avatar {
-  width: 150px;
-  height: 150px;
+  width: 9.375em; /* or 150px */
+  height: 9.375em;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -98,7 +98,6 @@ div.title {
 
 h1 {
   /* background-color: blue; */
-  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   font-weight: 700;
   margin-top: 0.8em;
@@ -119,7 +118,6 @@ h1:hover #eR {max-width: 6ch}
 
 h2 {
   /* background-color: lightgreen; */
-  font-family: 'Montserrat', sans-serif;
   font-size: 0.5em;
   font-weight: 400;
   margin-top: 0.8em;
@@ -132,7 +130,6 @@ div.credit {
   /* background-color: pink; */
   position: fixed;
   bottom: 2em;
-  font-family: 'Montserrat', sans-serif;
   font-size: 0.5em;
 }
 
@@ -140,7 +137,7 @@ div.credit, a.creditlink {
   color: rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
   div.headwrap {
     display: block;
     text-align: center;
@@ -171,5 +168,6 @@ div.credit, a.creditlink {
 }
 
 @media only screen and (max-height: 350px) {
-  div.credit {display: none}
+  /* div.credit {display: none} */
+  div.container {font-size: 0.5em}
 }
