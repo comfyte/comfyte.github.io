@@ -124,7 +124,7 @@ h2 {
   margin-bottom: 0;
 }
 
-#middle-icons {display: none}
+#mobile-icons {display: none}
 
 div.credit {
   /* background-color: pink; */
@@ -152,22 +152,23 @@ div.credit, a.creditlink {
 
   h1:hover {color: unset}
 
-  #top-icons {display: none}
-  #middle-icons {display: block}
+  #desktop-icons {display: none}
+  #mobile-icons {display: block}
 
   div.social {
-    margin-top: 1em;
+    position: fixed;
+    bottom: 1.5em;
+    text-align: center;
   }
 
   a.icon {
     font-size: 1.5em;
-    /* margin: 0.5em 0.3em 0 0.3em !important; */
     margin-top: 0.5em;
-    opacity: 0.5;
   }
+
+  div.credit {display: none}
 }
 
 @media only screen and (max-height: 350px) {
-  /* div.credit {display: none} */
   div.container {font-size: 0.5em}
 }
