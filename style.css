@@ -11,15 +11,15 @@ body {
   background-color: #fafafa;
   cursor: default;
   font-family: 'Montserrat', sans-serif;
+  opacity: 0.2;
+  transition: opacity 1s;
 }
 
 ::selection {background-color: #d4d4d4}
 
 div.header {
-  /* background-color: pink; */
   position: fixed;
   width: 100%;
-  /* height: 100px; */
   top: 0;
 }
 
@@ -27,13 +27,10 @@ div.headwrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: lightgreen; */
   margin: 2em 3em;
-  /* cursor: default; */
 }
 
 a.navigation {
-  /* background-color: yellow; */
   display: inline-block;
   padding: 0.25em;
   margin: 0 0.25em 0 0.25em;
@@ -42,7 +39,6 @@ a.navigation {
   color: black;
   opacity: 0.8;
   box-shadow: 0px -1px transparent inset;
-  /* transition: box-shadow 0.1s, opacity 0.1s; */
 }
 
 a.aktiv {
@@ -68,7 +64,6 @@ div.social:hover a.icon {opacity: 0.25}
 div.social:hover a.icon:hover {opacity:1}
 
 div.container {
-  /* background-color: yellow; */
   text-align: center;
 }
 
@@ -84,20 +79,13 @@ div.avatar {
   overflow: hidden;
   border-radius: 50%;
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25);
-  /* transition: transform 0.2s; */
 }
 
-/* div.avatar:hover {
-  transform: scale(1.1);
-} */
-
 div.title {
-  /* background-color: purple; */
   font-size: 2.5em;
 }
 
 h1 {
-  /* background-color: blue; */
   font-size: 1em;
   font-weight: 700;
   margin-top: 0.8em;
@@ -117,7 +105,6 @@ h1:hover #eR {max-width: 6ch}
 }
 
 h2 {
-  /* background-color: lightgreen; */
   font-size: 0.5em;
   font-weight: 400;
   margin-top: 0.8em;
@@ -127,7 +114,6 @@ h2 {
 #mobile-icons {display: none}
 
 div.credit {
-  /* background-color: pink; */
   position: fixed;
   bottom: 2em;
   font-size: 0.5em;
