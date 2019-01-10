@@ -65,6 +65,7 @@ div.social:hover a.icon:hover {opacity:1}
 
 div.container {
   text-align: center;
+  width: 25em;
 }
 
 img {
