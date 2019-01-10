@@ -3,7 +3,7 @@ var subtitle = [
   "CGDCT fan",
   "16",
   "USL <3",
-  "HS student",
+  "High school student",
   "comfyte",
   "Tech purist" // initial value on last
 ]
