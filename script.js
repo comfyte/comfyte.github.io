@@ -33,7 +33,6 @@ function part3() { // display!
 
 function loaded() {
   $(".throbber").css("display", "none");
-  init();
 }
 
 function init(){
@@ -42,6 +41,5 @@ function init(){
   setTimeout(part0, 1000); // wait until opacity restored
 }
 
-$(window).on('load', function(){
-  setTimeout(loaded, 500);
-})
+$(document).ready(loaded);
+$(window).on('load', init);
