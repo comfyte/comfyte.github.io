@@ -2,7 +2,7 @@ var subtitle = [
   "Indonesian",
   "CGDCT fan",
   "16",
-  "USL <3",
+  "Латифа <3",
   "High school student",
   "comfyte",
   "Tech purist" // initial value on last
@@ -31,8 +31,17 @@ function part3() { // display!
   setTimeout(part0, 500); // duration according to css transition
 }
 
+function loaded() {
+  $(".throbber").css("display", "none");
+  init();
+}
+
+function init(){
+  $(".container").css("opacity", "1");
+  $("img, .naviwrap, .social, .credit").css("transform", "unset");
+  setTimeout(part0, 1000); // wait until opacity restored
+}
+
 $(window).on('load', function(){
-  $("body").css("opacity", "1");
-  $("img").css("transform", "unset");
-  setTimeout(part0, 1000); // wait until loaded
+  setTimeout(loaded, 500);
 })

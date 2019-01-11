@@ -11,8 +11,6 @@ body {
   background-color: #fafafa;
   cursor: default;
   font-family: 'Montserrat', sans-serif;
-  opacity: 0.2;
-  transition: opacity 1s;
 }
 
 ::selection {background-color: #d4d4d4}
@@ -28,6 +26,11 @@ div.headwrap {
   align-items: center;
   justify-content: space-between;
   margin: 2em 3em;
+}
+
+div.naviwrap {
+  transform: translateX(-20em);
+  transition: transform 1s;
 }
 
 a.navigation {
@@ -60,12 +63,36 @@ a.icon {
   transition: opacity 0.2s;
 }
 
+div.social {
+  transform: translateX(20em);
+  transition: transform 1s;
+}
+
 div.social:hover a.icon {opacity: 0.25}
 div.social:hover a.icon:hover {opacity:1}
 
 div.container {
   text-align: center;
   width: 25em;
+  opacity: 0.2;
+  transition: opacity 1s;
+}
+
+div.throbber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+div.tricircle {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  margin: 0 0.25em;
+  background-color: white;
+  opacity: 0.5;
 }
 
 img {
@@ -122,6 +149,8 @@ div.credit {
   position: fixed;
   bottom: 2em;
   font-size: 0.5em;
+  transform: translateY(5em);
+  transition: transform 1s;
 }
 
 div.credit, a.creditlink {
@@ -133,6 +162,10 @@ div.credit, a.creditlink {
     display: block;
     text-align: center;
     margin: 1em 0;
+  }
+
+  div.naviwrap {
+    transform: translateY(-5em);
   }
 
   a.aktiv {
@@ -150,6 +183,7 @@ div.credit, a.creditlink {
     position: fixed;
     bottom: 1.5em;
     text-align: center;
+    transform: translateY(5em);
   }
 
   a.icon {

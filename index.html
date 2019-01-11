@@ -13,15 +13,16 @@
     <script src="script.js" charset="utf-8"></script>
     <noscript>
       <style>
-        body {opacity: 1}
-        img {transform: unset}
+        div.throbber {display: none}
+        div.container {opacity: 1}
+        img, div.naviwrap, div.social, div.credit {transform: unset}
       </style>
     </noscript>
   </head>
   <body>
     <div class="header">
       <div class="headwrap">
-        <div>
+        <div class="naviwrap">
           <a class="navigation aktiv" style="margin-left: 0" href="/">Home</a>
           <a class="navigation"><s>Blog</s></a>
           <a class="navigation"><s>About Me</s></a>
@@ -36,7 +37,10 @@
       </div>
     </div>
     <div class="container">
-      <div class="avatar"><img src="res/me.png" alt="Avatar Image"></div>
+      <div class="avatar">
+        <div class="throbber"><div class="tricircle"></div><div class="tricircle"></div><div class="tricircle"></div></div>
+        <img src="res/me.png" alt="Avatar Image">
+      </div>
       <div class="title">
         <h1>Farrel R<span id="eR">afirizqy</span></h1>
         <h2>Tech purist</h2>
