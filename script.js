@@ -32,6 +32,7 @@ function part3() { // display!
 }
 
 function loaded() {
+  $("h2").text(subtitle[subtitle.length-1]);
   $(".throbber").css("display", "none");
 }
 
