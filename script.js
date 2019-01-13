@@ -5,7 +5,7 @@ var subtitle = [
   "Латифа <3",
   "High school student",
   "comfyte",
-  "Tech purist" // initial value on last
+  "Tech enthusiast" // initial value
 ]
 
 var i = 0;
