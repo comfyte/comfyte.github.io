@@ -33,6 +33,7 @@ function part3() { // display!
 
 function loaded() {
   $("h2").text(subtitle[subtitle.length-1]);
+  $("h2").css("font-style", "unset");
   $(".throbber").css("display", "none");
 }
 

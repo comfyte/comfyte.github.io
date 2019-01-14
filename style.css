@@ -144,6 +144,7 @@ h1:hover #eR {max-width: 6ch}
 h2 {
   font-size: 0.5em;
   font-weight: 400;
+  font-style: italic;
   margin-top: 0.8em;
   margin-bottom: 0;
   transition: opacity 500ms; /*related to js*/
