@@ -33,13 +33,16 @@ function part3() { // display!
 
 function loaded() {
   $("h2").text(subtitle[subtitle.length-1]);
-  $("h2").css("font-style", "unset");
-  $(".throbber").css("display", "none");
+  $("h2").css({
+    "font-style": "unset",
+    "color": "unset"
+  });
+  // $(".throbber").css("display", "none");
 }
 
 function init(){
   $(".container").css("opacity", "1");
-  $("img, .naviwrap, .social, .credit").css("transform", "unset");
+  $(".container, img, .naviwrap, .social, .credit").css("transform", "unset");
   setTimeout(part0, 1000); // wait until opacity restored
 }
 

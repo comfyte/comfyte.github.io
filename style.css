@@ -80,8 +80,9 @@ div.social:hover a.icon:active {transform: scale(0.9);}
 div.container {
   text-align: center;
   width: 25em;
-  opacity: 0.2;
-  transition: opacity 1s;
+  opacity: 0;
+  transform: translateY(25%);
+  transition: opacity 1s, transform 1s;
 }
 
 div.throbber {
@@ -145,6 +146,7 @@ h2 {
   font-size: 0.5em;
   font-weight: 400;
   font-style: italic;
+  color: red;
   margin-top: 0.8em;
   margin-bottom: 0;
   transition: opacity 500ms; /*related to js*/

@@ -13,14 +13,9 @@
     <script src="script.js" charset="utf-8"></script>
     <noscript>
       <style>
-        div.throbber {display: none}
+        /* div.throbber {display: none} */
         div.container {opacity: 1}
-        img, div.naviwrap, div.social, div.credit {transform: unset}
-        h2::after {
-          display: block;
-          content: "(Error: JavaScript disabled)";
-          color: red;
-        }
+        div.container, img, div.naviwrap, div.social, div.credit {transform: unset}
       </style>
     </noscript>
   </head>
@@ -43,12 +38,12 @@
     </div>
     <div class="container">
       <div class="avatar">
-        <div class="throbber"><div class="tricircle"></div><div class="tricircle"></div><div class="tricircle"></div></div>
+        <!-- <div class="throbber"><div class="tricircle"></div><div class="tricircle"></div><div class="tricircle"></div></div> -->
         <img src="res/me.png" alt="Avatar Image">
       </div>
       <div class="title">
         <h1>Farrel R<span id="eR">afirizqy</span></h1>
-        <h2>Please wait...</h2>
+        <h2>(Error: JavaScript disabled)</h2>
       </div>
     </div>
     <div class="social" id="mobile-icons">
