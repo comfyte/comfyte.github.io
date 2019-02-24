@@ -30,7 +30,7 @@ div.headwrap {
 
 div.naviwrap {
   transform: translateX(-20em);
-  transition: transform 1s;
+  transition: transform 1.5s;
 }
 
 a.navigation {
@@ -65,7 +65,7 @@ a.icon {
 
 div.social {
   transform: translateX(20em);
-  transition: transform 1s;
+  transition: transform 1.5s;
 }
 
 div.social:hover a.icon {opacity: 0.25}
@@ -82,7 +82,7 @@ div.container {
   width: 25em;
   opacity: 0;
   transform: translateY(25%);
-  transition: opacity 1s, transform 1s;
+  transition: opacity 1.5s, transform 1.5s;
 }
 
 div.throbber {
@@ -105,7 +105,7 @@ div.tricircle {
 img {
   height: 100%;
   transform: translateY(100%);
-  transition: transform 1s;
+  transition: transform 1.5s;
 }
 
 div.avatar {
@@ -159,7 +159,7 @@ div.credit {
   bottom: 2em;
   font-size: 0.5em;
   transform: translateY(5em);
-  transition: transform 1s;
+  transition: transform 1.5s;
 }
 
 div.credit, a.creditlink {
