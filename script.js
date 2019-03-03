@@ -1,6 +1,6 @@
 var subtitle = [
   "Indonesian",
-  "CGDCT fan",
+  "><",
   "16",
   "Латифа <3",
   "High school student",
