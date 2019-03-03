@@ -117,10 +117,21 @@ div.avatar {
   border-radius: 50%;
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25);
   background-color: black;
+  transition: transform 0.5s, border-radius 0.5s;
+}
+
+div.avatar:hover {
+  transform: scale(1.25);
+  border-radius: 20%;
+}
+
+div.avatar:hover + div.title {
+  opacity: 0.25;
 }
 
 div.title {
   font-size: 2.5em;
+  transition: opacity 0.5s;
 }
 
 h1 {
@@ -179,6 +190,15 @@ div.credit, a.creditlink {
 
   a.aktiv {
     margin-left: 0.25em !important;
+  }
+
+  div.avatar:hover {
+    transform: unset;
+    border-radius: 50%;
+  }
+
+  div.avatar:hover + div.title {
+    opacity: unset;
   }
 
   #eR {display: none}
