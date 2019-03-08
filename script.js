@@ -1,6 +1,6 @@
 var subtitle = [
   "Indonesian",
-  "><",
+  ">_<",
   "16",
   "Латифа <3",
   "High school student",
