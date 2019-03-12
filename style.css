@@ -11,6 +11,10 @@ body {
   background-color: #fafafa;
   cursor: default;
   font-family: 'Montserrat', sans-serif;
+  transform: scale(1.5);
+  opacity: 0;
+  transition: transform 1.5s, opacity 1.5s;
+  overflow: hidden;
 }
 
 ::selection {background-color: #d4d4d4}
@@ -28,10 +32,10 @@ div.headwrap {
   margin: 2em 3em;
 }
 
-div.naviwrap {
+/* div.naviwrap {
   transform: translateX(-15em);
   transition: transform 1.5s;
-}
+} */
 
 a.navigation {
   display: inline-block;
@@ -63,10 +67,10 @@ a.icon {
   transition: opacity 0.2s, transform 0.2s;
 }
 
-div.social {
+/* div.social {
   transform: translateX(15em);
   transition: transform 1.5s;
-}
+} */
 
 div.social:hover a.icon {opacity: 0.25}
 
@@ -80,9 +84,9 @@ div.social:hover a.icon:active {transform: scale(0.9);}
 div.container {
   text-align: center;
   width: 25em;
-  opacity: 0;
-  transform: translateY(25%);
-  transition: opacity 1.5s, transform 1.5s;
+  /* opacity: 0; */
+  /* transform: translateY(25%);
+  transition: opacity 1.5s, transform 1.5s; */
 }
 
 img {
@@ -152,8 +156,8 @@ div.credit {
   position: fixed;
   bottom: 2em;
   font-size: 0.5em;
-  transform: translateY(5em);
-  transition: transform 1.5s;
+  /* transform: translateY(5em);
+  transition: transform 1.5s; */
 }
 
 div.credit, a.creditlink {
@@ -168,7 +172,7 @@ div.credit, a.creditlink {
   }
 
   div.naviwrap {
-    transform: translateY(-5em);
+    /* transform: translateY(-5em); */
   }
 
   a.aktiv {
@@ -195,7 +199,7 @@ div.credit, a.creditlink {
     position: fixed;
     bottom: 1.5em;
     text-align: center;
-    transform: translateY(5em);
+    /* transform: translateY(5em); */
   }
 
   a.icon {

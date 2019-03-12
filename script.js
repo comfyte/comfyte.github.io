@@ -37,12 +37,12 @@ function loaded() {
     "font-style": "unset",
     "color": "unset"
   });
-  $("#pleasewait").css("display", "none");
+  // $("#pleasewait").css("display", "none");
 }
 
 function init(){
-  $(".container").css("opacity", "1");
-  $(".container, img, .naviwrap, .social, .credit").css("transform", "unset");
+  $("body").css("opacity", "1");
+  $("body, img").css("transform", "unset");
   setTimeout(part0, 1500); // wait until opacity restored
 }
 
