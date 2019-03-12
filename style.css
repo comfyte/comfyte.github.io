@@ -29,7 +29,7 @@ div.headwrap {
 }
 
 div.naviwrap {
-  transform: translateX(-20em);
+  transform: translateX(-15em);
   transition: transform 1.5s;
 }
 
@@ -64,7 +64,7 @@ a.icon {
 }
 
 div.social {
-  transform: translateX(20em);
+  transform: translateX(15em);
   transition: transform 1.5s;
 }
 
