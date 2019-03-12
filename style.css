@@ -85,23 +85,6 @@ div.container {
   transition: opacity 1.5s, transform 1.5s;
 }
 
-div.throbber {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-div.tricircle {
-  display: inline-block;
-  width: 0.5em;
-  height: 0.5em;
-  border-radius: 50%;
-  margin: 0 0.25em;
-  background-color: white;
-  opacity: 0.5;
-}
-
 img {
   height: 100%;
   transform: translateY(100%);
