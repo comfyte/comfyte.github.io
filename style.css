@@ -64,7 +64,7 @@ a.icon {
   text-decoration: none;
   color: black;
   margin: 0 0.3em;
-  transition: opacity 0.2s, transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s, color 0.2s;
 }
 
 /* div.social {
@@ -80,6 +80,8 @@ div.social:hover a.icon:hover {
 }
 
 div.social:hover a.icon:active {transform: scale(0.9);}
+
+.c-twitter:hover {color: #1DA1F2}
 
 div.container {
   text-align: center;
