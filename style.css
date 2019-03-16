@@ -93,7 +93,7 @@ div.container {
 
 img {
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(50%);
   transition: transform 1.5s;
 }
 
