@@ -173,10 +173,6 @@ div.credit, a.creditlink {
     margin: 1em 0;
   }
 
-  div.naviwrap {
-    /* transform: translateY(-5em); */
-  }
-
   a.aktiv {
     margin-left: 0.25em !important;
   }
