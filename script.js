@@ -1,10 +1,9 @@
 var subtitle = [
   "Tech aficionado",
   "Indonesian",
-  ">_<",
-  "16",
+  "17",
+  "Student",
   "Латифа <3",
-  "High school student",
   "comfyte" // initial value
 ]
 

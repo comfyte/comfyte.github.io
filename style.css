@@ -44,18 +44,18 @@ a.navigation {
   font-weight: 400;
   text-decoration: none;
   color: black;
-  opacity: 0.8;
+  opacity: 0.6;
   box-shadow: 0px -1px transparent inset;
 }
 
 a.aktiv {
   opacity: 1;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 a.navigation:hover {
   opacity: 1;
-  box-shadow: 0px -1px black inset;
+  /* box-shadow: 0px -1px black inset; */
 }
 
 a.icon {
@@ -81,7 +81,7 @@ div.social:hover a.icon:hover {
 
 div.social:hover a.icon:active {transform: scale(0.9);}
 
-.c-twitter:hover {color: #1DA1F2}
+/* .c-twitter:hover {color: #1DA1F2} */
 
 div.container {
   text-align: center;
