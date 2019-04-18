@@ -76,7 +76,7 @@ div.social:hover a.icon {opacity: 0.25}
 
 div.social:hover a.icon:hover {
   opacity: 1;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 div.social:hover a.icon:active {transform: scale(0.9);}
