@@ -164,6 +164,15 @@ div.credit {
 
 div.credit, a.creditlink {
   color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+a.creditlink:hover {
+  color: black;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {transform: unset}
 }
 
 @media only screen and (max-width: 500px) {
