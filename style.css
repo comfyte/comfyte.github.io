@@ -11,7 +11,7 @@ body {
   background-color: #fafafa;
   cursor: default;
   font-family: 'Montserrat', sans-serif;
-  transform: scale(1.5);
+  transform: scale(1.1);
   opacity: 0;
   transition: transform 1.5s, opacity 1.5s;
   overflow: hidden;
