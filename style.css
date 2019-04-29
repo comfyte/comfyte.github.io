@@ -172,7 +172,7 @@ a.creditlink:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body {transform: unset}
+  body, img {transform: unset}
 }
 
 @media only screen and (max-width: 500px) {
