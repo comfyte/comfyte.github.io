@@ -172,6 +172,7 @@ a.creditlink:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  body {opacity: 1}
   body, img {transform: unset}
 }
 
