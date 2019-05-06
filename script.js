@@ -42,7 +42,7 @@ function loaded() {
 function init(){
   $("body").css("opacity", "1");
   $("img").css("transform", "unset");
-  setTimeout(part0, 1000); // wait until opacity restored
+  setTimeout(part0, 500); // wait until opacity restored
 }
 
 $(document).ready(loaded);
