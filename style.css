@@ -11,9 +11,9 @@ body {
   background-color: #fafafa;
   cursor: default;
   font-family: 'Montserrat', sans-serif;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   opacity: 0;
-  transition: transform 1.5s, opacity 1.5s;
+  transition: opacity 1s;
   overflow: hidden;
 }
 
@@ -93,8 +93,8 @@ div.container {
 
 img {
   height: 100%;
-  transform: translateY(50%);
-  transition: transform 1.5s;
+  transform: translateY(25%);
+  transition: transform 1s;
 }
 
 div.avatar {
@@ -173,7 +173,7 @@ a.creditlink:hover {
 
 @media (prefers-reduced-motion: reduce) {
   body {opacity: 1}
-  body, img {transform: unset}
+  img {transform: unset}
 }
 
 @media only screen and (max-width: 500px) {
