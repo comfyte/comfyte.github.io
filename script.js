@@ -1,5 +1,5 @@
 var subtitle = [
-  "Tech aficionado",
+  "Tech enthusiast",
   "Indonesian",
   "17",
   "Student",
