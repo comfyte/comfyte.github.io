@@ -1,6 +1,7 @@
 var subtitle = [
   "Tech enthusiast",
   "Indonesian",
+  "Moé lover",
   "17",
   "Student",
   "Латифа <3",
