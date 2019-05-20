@@ -81,8 +81,6 @@ div.social:hover a.icon:hover {
 
 div.social:hover a.icon:active {transform: scale(0.9);}
 
-/* .c-twitter:hover {color: #1DA1F2} */
-
 div.container {
   text-align: center;
   width: 25em;
