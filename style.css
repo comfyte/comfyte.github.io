@@ -1,3 +1,21 @@
+:root {
+  --content-color: black;
+  --credit-color: rgba(0, 0, 0, 0.5);
+  --accent-color: #3689e6;
+  --bg-color: #fafafa;
+  --textselect-color: #d4d4d4;
+  --ava-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] {
+  --content-color: white;
+  --credit-color: rgba(255, 255, 255, 0.5);
+  --accent-color: #64baff;
+  --bg-color: #222222;
+  --textselect-color: #abacae;
+  --ava-shadow: 0px 5px 25px #3689e640;
+}
+
 html {
   height: 100%;
 }
@@ -8,16 +26,17 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
+  color: var(--content-color);
   cursor: default;
   font-family: 'Montserrat', sans-serif;
   /* transform: scale(1.1); */
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 1s, background-color 1s;
   overflow: hidden;
 }
 
-::selection {background-color: #d4d4d4}
+::selection {background-color: var(--textselect-color)}
 
 div.header {
   position: fixed;
@@ -43,7 +62,8 @@ a.navigation {
   margin: 0 0.25em 0 0.25em;
   font-weight: 400;
   text-decoration: none;
-  color: black;
+  color: var(--content-color);
+  transition: color 0.5s;
   opacity: 0.6;
   box-shadow: 0px -1px transparent inset;
 }
@@ -62,9 +82,9 @@ a.icon {
   font-size: 1.25em;
   line-height: normal;
   text-decoration: none;
-  color: black;
+  color: var(--content-color);
   margin: 0 0.3em;
-  transition: opacity 0.2s, transform 0.2s, color 0.2s;
+  transition: opacity 0.2s, transform 0.2s, color 0.5s;
 }
 
 /* div.social {
@@ -102,9 +122,9 @@ div.avatar {
   margin-right: auto;
   overflow: hidden;
   border-radius: 50%;
-  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--ava-shadow);
   background-color: black;
-  transition: transform 0.5s, border-radius 0.5s;
+  transition: transform 0.5s, border-radius 0.5s, box-shadow 0.5s;
 }
 
 div.avatar:hover {
@@ -129,7 +149,7 @@ h1 {
   transition: color 0.5s;
 }
 
-h1:hover {color: #3689e6}
+h1:hover {color: var(--accent-color)}
 h1:hover #eR {max-width: 6ch}
 
 #eR {
@@ -143,11 +163,11 @@ h1:hover #eR {max-width: 6ch}
 h2 {
   font-size: 0.5em;
   font-weight: 400;
-  font-style: italic;
-  color: red;
+  /* font-style: italic; */
+  /* color: red; */
   margin-top: 0.8em;
   margin-bottom: 0;
-  transition: opacity 500ms; /*related to js*/
+  transition: opacity 500ms, color 0.5s;
 }
 
 #mobile-icons {display: none}
@@ -160,13 +180,15 @@ div.credit {
   transition: transform 1.5s; */
 }
 
+div.credit {transition: color 0.5s}
+
 div.credit, a.creditlink {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--credit-color);
   text-decoration: none;
 }
 
 a.creditlink:hover {
-  color: black;
+  color: var(--content-color);
 }
 
 @media (prefers-reduced-motion: reduce) {

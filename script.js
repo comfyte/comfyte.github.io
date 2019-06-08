@@ -33,14 +33,10 @@ function part3() { // display!
 
 function loaded() {
   $("h2").text(subtitle[subtitle.length-1]);
-  $("h2").css({
-    "font-style": "unset",
-    "color": "unset"
-  });
   // $("#pleasewait").css("display", "none");
 }
 
-function init(){
+function init() {
   $("body").css("opacity", "1");
   $("img").css("transform", "unset");
   setTimeout(part0, 500); // wait until opacity restored
@@ -48,3 +44,20 @@ function init(){
 
 $(document).ready(loaded);
 $(window).on('load', init);
+
+const Nmodecache = localStorage.getItem('Nmode') ? localStorage.getItem('Nmode') : null;
+
+if (Nmodecache) {
+  document.documentElement.setAttribute('data-theme', Nmodecache);
+}
+
+function toggleNmode() {
+  if (document.documentElement.getAttribute('data-theme') == 'dark') {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.removeItem('Nmode');
+  }
+  else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('Nmode', 'dark');
+  }
+}
