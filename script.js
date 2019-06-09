@@ -8,6 +8,27 @@ var subtitle = [
   "comfyte" // initial value
 ]
 
+const Nmodecache = localStorage.getItem('Nmode') ? localStorage.getItem('Nmode') : null;
+
+if (Nmodecache) { // if exists
+  document.documentElement.setAttribute('data-theme', Nmodecache);
+}
+
+function toggleNmode() {
+  if (document.documentElement.getAttribute('data-theme') == 'dark') {
+    document.documentElement.removeAttribute('data-theme'); // change theme to light
+    localStorage.removeItem('Nmode'); // remove darktheme entry from local storage
+    $(".togglebutton").removeClass("fa-sun");
+    $(".togglebutton").addClass("fa-moon"); // change toggle button icon to moon
+  }
+  else {
+    document.documentElement.setAttribute('data-theme', 'dark');  // change theme to dark
+    localStorage.setItem('Nmode', 'dark');  // add darktheme entry to local storage
+    $(".togglebutton").removeClass("fa-moon");
+    $(".togglebutton").addClass("fa-sun");  // change toggle button icon to sun
+  }
+}
+
 var i = 0;
 
 function part0() { // 1s delay before changing subtitle
@@ -34,6 +55,10 @@ function part3() { // display!
 function loaded() {
   $("h2").text(subtitle[subtitle.length-1]);
   // $("#pleasewait").css("display", "none");
+  if (Nmodecache) {
+    $(".togglebutton").removeClass("fa-moon");
+    $(".togglebutton").addClass("fa-sun");  
+  }
 }
 
 function init() {
@@ -44,20 +69,3 @@ function init() {
 
 $(document).ready(loaded);
 $(window).on('load', init);
-
-const Nmodecache = localStorage.getItem('Nmode') ? localStorage.getItem('Nmode') : null;
-
-if (Nmodecache) {
-  document.documentElement.setAttribute('data-theme', Nmodecache);
-}
-
-function toggleNmode() {
-  if (document.documentElement.getAttribute('data-theme') == 'dark') {
-    document.documentElement.removeAttribute('data-theme');
-    localStorage.removeItem('Nmode');
-  }
-  else {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('Nmode', 'dark');
-  }
-}
