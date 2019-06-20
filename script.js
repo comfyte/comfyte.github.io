@@ -20,12 +20,14 @@ function toggleNmode() {
     localStorage.removeItem('Nmode'); // remove darktheme entry from local storage
     $(".togglebutton").removeClass("fa-sun");
     $(".togglebutton").addClass("fa-moon"); // change toggle button icon to moon
+    $(".togglebutton").attr("title","Dark mode");
   }
   else {
     document.documentElement.setAttribute('data-theme', 'dark');  // change theme to dark
     localStorage.setItem('Nmode', 'dark');  // add darktheme entry to local storage
     $(".togglebutton").removeClass("fa-moon");
     $(".togglebutton").addClass("fa-sun");  // change toggle button icon to sun
+    $(".togglebutton").attr("title","Light mode");
   }
 }
 
@@ -57,7 +59,8 @@ function loaded() {
   // $("#pleasewait").css("display", "none");
   if (Nmodecache) {
     $(".togglebutton").removeClass("fa-moon");
-    $(".togglebutton").addClass("fa-sun");  
+    $(".togglebutton").addClass("fa-sun");
+    $(".togglebutton").attr("title","Light mode");
   }
 }
 
