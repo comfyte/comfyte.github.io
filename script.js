@@ -1,8 +1,17 @@
+function ikutsu() { //何歳
+  var today = new Date();
+  var DoB = new Date("2002-04-12");
+  var umur = today.getFullYear() - DoB.getFullYear();
+  var m = today.getMonth() - DoB.getMonth();
+  if ( m < 0 || ( m === 0 && today.getDate() < DoB.getDate() ) ) { umur = umur - 1 }
+  return umur;
+}
+
 var subtitle = [
   "Tech enthusiast",
   "Indonesian",
-  "Moé lover",
-  "17",
+  "Loves moé",
+  ikutsu(),
   "Student",
   "Латифа <3",
   "comfyte" // initial value
