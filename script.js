@@ -10,7 +10,7 @@ function ikutsu() { //何歳
 var subtitle = [
   "Tech enthusiast",
   "Indonesian",
-  "Loves moé",
+  "Loves moé things",
   ikutsu(),
   "Student",
   "Латифа <3",
