@@ -63,9 +63,11 @@ function part3() { // display!
   setTimeout(part0, 500); // duration according to css transition
 }
 
-function loaded() {
+var origtitle = document.title;
+
+function init1() {
+  document.title = "Please wait...";
   $("h2").text(subtitle[subtitle.length-1]);
-  // $("#pleasewait").css("display", "none");
   if (Nmodecache) {
     $(".togglebutton").removeClass("fa-moon");
     $(".togglebutton").addClass("fa-sun");
@@ -73,11 +75,12 @@ function loaded() {
   }
 }
 
-function init() {
+function init2() {
   $("body").css("opacity", "1");
   $("img").css("transform", "unset");
   setTimeout(part0, 500); // wait until opacity restored
+  document.title = origtitle;
 }
 
-$(document).ready(loaded);
-$(window).on('load', init);
+$(document).ready(init1);
+$(window).on('load', init2);
