@@ -10,17 +10,18 @@ function ikutsu() { //何歳
 var subtitle = [
   "Tech enthusiast",
   "Indonesian",
-  "Loves moé things",
+  // "Loves moé things",
   ikutsu(),
   "Student",
   "Латифа <3",
   "comfyte" // initial value
 ]
 
-const Nmodecache = localStorage.getItem('Nmode') ? localStorage.getItem('Nmode') : null;
+const LastUsedMode = localStorage.getItem('Nmode') ? localStorage.getItem('Nmode') : null;
 
-if (Nmodecache) { // if exists
-  document.documentElement.setAttribute('data-theme', Nmodecache);
+if (LastUsedMode) { // if exists, change to dark mode
+  document.documentElement.setAttribute('data-theme', LastUsedMode);
+  $("meta[name=theme-color]").attr('content', '#002e99');
 }
 
 function toggleNmode() {
@@ -30,6 +31,7 @@ function toggleNmode() {
     $(".togglebutton").removeClass("fa-sun");
     $(".togglebutton").addClass("fa-moon"); // change toggle button icon to moon
     $(".togglebutton").attr("title","Dark mode");
+    $("meta[name=theme-color]").attr('content', '#8cd5ff');
   }
   else {
     document.documentElement.setAttribute('data-theme', 'dark');  // change theme to dark
@@ -37,6 +39,7 @@ function toggleNmode() {
     $(".togglebutton").removeClass("fa-moon");
     $(".togglebutton").addClass("fa-sun");  // change toggle button icon to sun
     $(".togglebutton").attr("title","Light mode");
+    $("meta[name=theme-color]").attr('content', '#002e99');
   }
 }
 
@@ -68,7 +71,7 @@ var origtitle = document.title;
 function init1() {
   document.title = "Please wait...";
   $("h2").text(subtitle[subtitle.length-1]);
-  if (Nmodecache) {
+  if (LastUsedMode) {
     $(".togglebutton").removeClass("fa-moon");
     $(".togglebutton").addClass("fa-sun");
     $(".togglebutton").attr("title","Light mode");
@@ -80,6 +83,11 @@ function init2() {
   $("img").css("transform", "unset");
   setTimeout(part0, 500); // wait until opacity restored
   document.title = origtitle;
+  setTimeout(function() {
+    if (document.title != origtitle) {
+      document.title = origtitle;
+    };
+  }, 2000);
 }
 
 $(document).ready(init1);
