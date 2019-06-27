@@ -21,7 +21,7 @@ const LastUsedMode = localStorage.getItem('Nmode') ? localStorage.getItem('Nmode
 
 if (LastUsedMode) { // if exists, change to dark mode
   document.documentElement.setAttribute('data-theme', LastUsedMode);
-  $("meta[name=theme-color]").attr('content', '#002e99');
+  $("meta[name=theme-color]").attr('content', '#222222');
 }
 
 function toggleNmode() {
@@ -31,7 +31,7 @@ function toggleNmode() {
     $(".togglebutton").removeClass("fa-sun");
     $(".togglebutton").addClass("fa-moon"); // change toggle button icon to moon
     $(".togglebutton").attr("title","Dark mode");
-    $("meta[name=theme-color]").attr('content', '#8cd5ff');
+    $("meta[name=theme-color]").attr('content', '#fafafa');
   }
   else {
     document.documentElement.setAttribute('data-theme', 'dark');  // change theme to dark
@@ -39,7 +39,7 @@ function toggleNmode() {
     $(".togglebutton").removeClass("fa-moon");
     $(".togglebutton").addClass("fa-sun");  // change toggle button icon to sun
     $(".togglebutton").attr("title","Light mode");
-    $("meta[name=theme-color]").attr('content', '#002e99');
+    $("meta[name=theme-color]").attr('content', '#222222');
   }
 }
 
