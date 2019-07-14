@@ -12,7 +12,7 @@ var subtitle = [
   "Indonesian",
   // "Loves moé things",
   ikutsu(),
-  "Student",
+  "IT student",
   "Латифа <3",
   "comfyte" // initial value
 ]
