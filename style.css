@@ -180,13 +180,14 @@ div.credit {
   font-size: 0.5em;
   /* transform: translateY(5em);
   transition: transform 1.5s; */
+  transition: color 0.5s;
+  font-style: italic;
+  text-align: center;
 }
-
-div.credit {transition: color 0.5s}
 
 div.credit, a.creditlink {
   color: var(--credit-color);
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 a.creditlink:hover {
@@ -227,7 +228,7 @@ a.creditlink:hover {
 
   div.social {
     position: fixed;
-    bottom: 1.5em;
+    bottom: 2.5em;
     text-align: center;
     /* transform: translateY(5em); */
   }
@@ -237,7 +238,7 @@ a.creditlink:hover {
     margin-top: 0.5em;
   }
 
-  div.credit {display: none}
+  /* div.credit {display: none} */
 }
 
 @media only screen and (max-height: 350px) {
