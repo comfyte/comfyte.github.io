@@ -5,6 +5,7 @@
   --bg-color: #fafafa;
   --textselect-color: #d4d4d4;
   --ava-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25);
+  --toggle-color: #3689e6;
 }
 
 [data-theme="dark"] {
@@ -14,6 +15,7 @@
   --bg-color: #222222;
   --textselect-color: #abacae;
   --ava-shadow: 0px 5px 25px #3689e640;
+  --toggle-color: #f9c440;
 }
 
 html {
@@ -103,7 +105,7 @@ div.social:hover a.icon:active {transform: scale(0.9);}
 
 div.container {
   text-align: center;
-  width: 25em;
+  max-width: 26em;
   /* opacity: 0; */
   /* transform: translateY(25%);
   transition: opacity 1.5s, transform 1.5s; */
@@ -144,13 +146,13 @@ div.title {
 h1 {
   font-size: 1em;
   font-weight: 700;
-  margin-top: 0.8em;
+  margin-top: /*0.8em*/ 0;
   margin-bottom: 0.4em;
   transition: color 0.5s;
 }
 
 h1:hover {color: var(--accent-color)}
-h1:hover #eR {max-width: 6ch}
+h1:hover #eR {max-width: /*6ch*/ 7.5ch}
 
 #eR {
   display: inline-block;
@@ -168,6 +170,7 @@ h2 {
   margin-top: 0.8em;
   margin-bottom: 0;
   transition: opacity 500ms, color 0.5s;
+  text-align: left;
 }
 
 #mobile-icons {display: none}

@@ -12,8 +12,8 @@ var subtitle = [
   "Indonesian",
   // "Loves moé things",
   ikutsu(),
-  "IT student",
-  "Латифа <3",
+  "IE student",
+  "U < 3",
   "comfyte" // initial value
 ]
 
@@ -80,7 +80,7 @@ function init1() {
 
 function init2() {
   $("body").css("opacity", "1");
-  $("img").css("transform", "unset");
+  // $("img").css("transform", "unset");
   setTimeout(part0, 500); // wait until opacity restored
   document.title = origtitle;
   setTimeout(function() {
