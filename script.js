@@ -1,4 +1,4 @@
-function ikutsu() { //何歳
+function age() { //何歳
   var today = new Date();
   var DoB = new Date("2002-04-12");
   var umur = today.getFullYear() - DoB.getFullYear();
@@ -10,11 +10,10 @@ function ikutsu() { //何歳
 var subtitle = [
   "Tech enthusiast",
   "Indonesian",
-  // "Loves moé things",
-  ikutsu(),
-  "IE student",
-  "U < 3",
-  "comfyte" // initial value
+  age(),
+  "Information Engineering",
+  "La💞",
+  // "comfyte" // initial value
 ]
 
 const LastUsedMode = localStorage.getItem('Nmode') ? localStorage.getItem('Nmode') : null;

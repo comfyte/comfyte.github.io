@@ -181,7 +181,7 @@ div.credit {
   /* transform: translateY(5em);
   transition: transform 1.5s; */
   transition: color 0.5s;
-  font-style: italic;
+  /* font-style: italic; */
   text-align: center;
 }
 
