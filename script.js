@@ -69,7 +69,7 @@ var origtitle = document.title;
 
 function init1() {
   document.title = "Please wait...";
-  $("h2").text(subtitle[subtitle.length-1]);
+  $("h2").text("comfyte"); // previously subtitle[subtitle.length-1]
   if (LastUsedMode) {
     $(".togglebutton").removeClass("fa-moon");
     $(".togglebutton").addClass("fa-sun");
