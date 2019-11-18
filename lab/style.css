@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.bg-img {
+    height: 100%;
+    background-color: #222222;
+    background-image: url(testbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-overlay {
+    height: 100%;
+    width: 50%;
+    transition: width 0.5s;
+    background-color: black;
+    opacity: 0.5;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.test-text::before {
+    z-index: -1;
+}
+
+.test-text {
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    background-color: white;
+    background-image: url(testbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: blur(10px); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 750px) {
+    .main-overlay {
+        width: 100%;
+    }
+}
