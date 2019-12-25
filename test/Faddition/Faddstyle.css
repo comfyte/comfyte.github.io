@@ -167,7 +167,7 @@ p {
     border-radius: 99px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991.98px) {
     #competitions-carousel .nav-link {
         width: 150px;
     }
@@ -176,7 +176,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
     .competitions-heading {
         font-size: 40px;
     }
@@ -199,7 +199,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575.98px) {
     .competitions-heading {
         font-size: 30px;
     }
@@ -219,6 +219,9 @@ p {
     .competition-line-indicator {
         margin-top: 0;
         width: 100%;
+    }
+    .carousel-arrow-left, .carousel-arrow-right {
+        display: none;
     }
     .cmtext-mobile {
         display: block;
