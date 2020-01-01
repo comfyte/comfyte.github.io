@@ -89,5 +89,11 @@ function init2() {
   }, 2000);
 }
 
-$(document).ready(init1);
+$(document).ready(function() {
+  init1();
+  $('.naviwrap').on('click', '.navigation', function() {
+    $('.navigation').removeClass('aktiv');
+    $(this).addClass('aktiv');
+  });
+});
 $(window).on('load', init2);
