@@ -235,6 +235,8 @@ a.creditlink:hover {
     margin-left: 0.25em !important;
   }
 
+  div.social:hover a.icon {opacity: 1;}
+
   div.avatar:hover {
     transform: unset;
     border-radius: 50%;
