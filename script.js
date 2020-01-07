@@ -27,17 +27,11 @@ function toggleNmode() {
   if (document.documentElement.getAttribute('data-theme') == 'dark') {
     document.documentElement.removeAttribute('data-theme'); // change theme to light
     localStorage.removeItem('Nmode'); // remove darktheme entry from local storage
-    $(".togglebutton").removeClass("fa-sun");
-    $(".togglebutton").addClass("fa-moon"); // change toggle button icon to moon
-    $(".togglebutton").attr("title","Dark mode");
     $("meta[name=theme-color]").attr('content', '#fafafa');
   }
   else {
     document.documentElement.setAttribute('data-theme', 'dark');  // change theme to dark
     localStorage.setItem('Nmode', 'dark');  // add darktheme entry to local storage
-    $(".togglebutton").removeClass("fa-moon");
-    $(".togglebutton").addClass("fa-sun");  // change toggle button icon to sun
-    $(".togglebutton").attr("title","Light mode");
     $("meta[name=theme-color]").attr('content', '#222222');
   }
 }
@@ -70,11 +64,6 @@ var origtitle = document.title;
 function init1() {
   document.title = "Please wait...";
   $("h2").text("comfyte"); // previously subtitle[subtitle.length-1]
-  if (LastUsedMode) {
-    $(".togglebutton").removeClass("fa-moon");
-    $(".togglebutton").addClass("fa-sun");
-    $(".togglebutton").attr("title","Light mode");
-  }
 }
 
 function init2() {
