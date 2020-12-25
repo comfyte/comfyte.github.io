@@ -1,3 +1,4 @@
+/*
 function age() { //何歳
   var today = new Date();
   var DoB = new Date("2002-04-12");
@@ -15,6 +16,7 @@ var subtitle = [
   "La💞",
   // "comfyte" // initial value
 ]
+*/
 
 const LastUsedMode = localStorage.getItem('Nmode') ? localStorage.getItem('Nmode') : null;
 
@@ -36,6 +38,7 @@ function toggleNmode() {
   }
 }
 
+/*
 var i = 0;
 
 function part0() { // 1s delay before changing subtitle
@@ -69,7 +72,7 @@ function init1() {
 function init2() {
   $("body").css("opacity", "1");
   $("img").css("transform", "unset");
-  setTimeout(part0, 500); // wait until opacity restored
+  setTimeout(part0, 500); // wait until the initial opacity is restored
   document.title = origtitle;
   setTimeout(function() {
     if (document.title != origtitle) {
@@ -77,12 +80,14 @@ function init2() {
     };
   }, 2000);
 }
+*/
 
 $(document).ready(function() {
-  init1();
+  /* init1(); */
   $('.naviwrap').on('click', '.navigation', function() {
     $('.navigation').removeClass('aktiv');
     $(this).addClass('aktiv');
   });
 });
-$(window).on('load', init2);
+
+/* $(window).on('load', init2); */

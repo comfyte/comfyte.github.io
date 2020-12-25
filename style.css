@@ -33,8 +33,8 @@ body {
   cursor: default;
   font-family: 'Montserrat', sans-serif;
   /* transform: scale(1.1); */
-  opacity: 0;
-  transition: opacity 1s, background-color 0.5s;
+  /* opacity: 0; */
+  /* transition: opacity 1s, background-color 0.5s; */
   overflow: hidden;
 }
 
@@ -138,8 +138,8 @@ div.container {
 
 img {
   height: 100%;
-  transform: translateY(25%);
-  transition: transform 1s;
+  /* transform: translateY(25%);
+  transition: transform 1s; */
 }
 
 div.avatar {
